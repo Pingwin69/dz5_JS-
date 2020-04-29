@@ -44,8 +44,8 @@ function start(){z = setInterval(function timeStarted(){
     document.querySelector('.minute').innerHTML = minuteStarted + ':';
     document.querySelector('.secs').innerHTML = secStarted + '.';
     document.querySelector('.mSecs').innerHTML = mSecStarted;
-    if(document.querySelector('.pisa')){
-    document.querySelector('.pisa').innerHTML = minuteStarted + ':' + secStarted + '.' + mSecStarted;}
+    if(document.querySelector('.pis')){
+    document.querySelector('.pis').innerHTML = minuteStarted + ':' + secStarted + '.' + mSecStarted;}
 }, 10)}
 
 function stop(){
@@ -123,8 +123,8 @@ function startKryg(){x = setInterval(function timeStarted(){
         sec1 = 0;
         minute1 = ++minute1;
     }
-    if(document.querySelector('.jopa')){
-    document.querySelector('.jopa').innerHTML = minuteStarted + ':' +  secStarted + '.' + mSecStarted;
+    if(document.querySelector('.jop')){
+    document.querySelector('.jop').innerHTML = minuteStarted + ':' +  secStarted + '.' + mSecStarted;
 }
 }, 10);}
 
@@ -144,8 +144,8 @@ function newKryg(){
         startKryg();
         clear2();
         ulList.innerHTML = '<li></li>'+
-        '<li class="jopa"></li>'+
-        '<li class="pisa"></li>';    
+        '<li class="jop"></li>'+
+        '<li class="pis"></li>';    
         olSpisok.appendChild(ulList);    
     
         var min = document.querySelector('.minute').innerHTML;
@@ -167,10 +167,10 @@ function newKryg(){
         var sec = document.querySelector('.secs').innerHTML;
         var miliSecs = document.querySelector('.mSecs').innerHTML;
         var ulList = document.createElement('ul');
-        if(document.querySelector('.jopa')){
-        var jopa = document.querySelector('.jopa').innerHTML;
+        if(document.querySelector('.jop')){
+        var jop = document.querySelector('.jop').innerHTML;
         ulList.innerHTML = '<li>'+num+'</li>'+
-        '<li>'+jopa+'</li>'+
+        '<li>'+jop+'</li>'+
         '<li>'+min+sec+miliSecs+'</li>';
         olSpisok.appendChild(ulList);
     }
